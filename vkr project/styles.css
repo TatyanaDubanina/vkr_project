@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.hidden {
+    display: none;
+}
+
+.login-container, .menu, .backup, .file-upload {
+    position: relative;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    margin-top: 10px;
+}
+
+.login-button, .upload-button, .menu-button, .backup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.menu, .backup {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu-dropdown a, .backup-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.menu-dropdown a:hover, .backup-dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+.file-upload-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.file-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#file-dropzone {
+    flex: 1;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    resize: none;
+    width: 80%;
+    height: 60px;
+}
+.upload-button {
+    margin-top: 10px;
+}
+.settings-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+.backup-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 5px;
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+}
+
+.backup-dropdown a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    color: #333;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.backup-dropdown a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+

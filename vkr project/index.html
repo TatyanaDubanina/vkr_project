@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup and File Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Авторизация -->
+    <div id="login-page" class="login-container">
+        <h2>Авторизация</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Логин</label>
+                <input type="text" id="username" name="username" placeholder="Введите свой логин" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите свой пароль" required>
+            </div>
+            <button type="button" class="login-button" onclick="enterApp()">Войти</button>
+        </form>
+    </div>
+
+    <!-- Главная страница -->
+    <div id="app-page" class="hidden">
+        
+
+        <div class="backup">
+            <button class="settings-icon" id="settings-icon">⚙️</button>
+            <div class="backup-dropdown" id="backup-menu">
+                <a href="#">Ежедневное автоматическое резервное копирование</a>
+                <a href="#">Еженедельное автоматическое резервное копирование</a>
+                <a href="#">Ежемесячное автоматическое резервное копирование</a>
+            </div>
+        </div>
+
+        <div class="file-upload">
+            <div class="file-upload-row">
+                <span class="file-icon" onclick="triggerFileInput()">📤</span>
+                <textarea id="file-dropzone" placeholder="Добавь файлы сюда"></textarea>
+            </div>
+            <input type="file" id="file-input" multiple>
+            <button class="upload-button">Загрузить на сервер</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
