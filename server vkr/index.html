@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <!-- Authorization Section -->
+        <div id="auth-section" class="auth-form">
+            <h2>Login</h2>
+            <label for="login">Login:</label>
+            <input type="text" id="login" placeholder="Enter your login">
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+    
+            <button id="loginButton">Log In</button>
+        </div>
+    
+        <!-- Dashboard Section -->
+        <div id="dashboard-section" class="dashboard">
+            <h2>Admin Panel</h2>
+            <div id="users-display" class="users-display">
+                <strong>Registered Users:</strong>
+            </div>
+            <button id="licenseButton">License</button>
+            <button id="registerButton">Register User</button>
+        </div>
+    
+        <!-- License Page -->
+        <div id="license-page" class="dashboard">
+            <h2>License Management</h2>
+            <label for="license-check">Check License:</label>
+            <input type="text" id="license-check" placeholder="Enter license key">
+    
+            <label for="license-generate">Generate License:</label>
+            <input type="text" id="license-generate" placeholder="Enter user details">
+    
+            <button class="generate">Generate License</button>
+            <button class="download">Download License</button>
+            <button class="activate">Activate License</button>
+            <button id="close-license-page">Close</button>
+        </div>
+    
+        <!-- User Registration Modal -->
+        <div id="modal-overlay" class="modal-overlay"></div>
+        <div id="user-modal" class="modal">
+            <h3>Register User</h3>
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" placeholder="Enter username">
+    
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" placeholder="Enter password">
+    
+            <button onclick="registerUser()" class="register">Register</button>
+            <button id="close-modal">Close</button>
+        </div>
+    </body>
+    </html>
+    <script defer src="script.js"></script>
